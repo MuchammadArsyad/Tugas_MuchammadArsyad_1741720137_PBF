@@ -1,22 +1,24 @@
 import React from 'react';
-
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="kotak_login">
-      <p class="tulisan_login"><strong>Tugas Pertemuan Ketiga</strong></p>
-      
-      <form>
-        <label>Username</label>
-        <input type="text" name="username" class="form_login" placeholder="Masukan Username"></input>
-       
-        <label>Password</label>
-			  <input type="text" name="password" class="form_login" placeholder="Masukan password"></input>
-
-        <input type="submit" class="tombol_login" value="LOGIN"></input>
-      </form>
-      
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
