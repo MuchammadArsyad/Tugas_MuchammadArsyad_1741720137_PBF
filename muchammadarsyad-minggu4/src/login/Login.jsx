@@ -1,42 +1,41 @@
-import React from "./node_modules/react";
+import React from "react";
 import "./Login.css";
 
 class Login extends React.Component {
   render() {
     return (
-      <div className="home">
-        <div className="judul">
-          <h2>Form Login</h2>
-          <br></br>
-          <div className="kotak_login">
-            <h1>Tugas Pertemuan</h1>
-            <h1>ketiga</h1>
+      <div className="judul">
+        <h2>Form Login</h2>
+        <br/>
+        <div className="box">
+          <h1>Tugas Pertemuan</h1>
+          <h1>ketiga</h1>
 
-            <form>
-                <label className = "label_login">Username </label>
-                <input type = "text" name = "uername" class = "form_login" placeholder = "masukkan username"></input>
-                
-                <br></br>
-
-                <label className = "label_login">Password </label>
-                <input type = "password" name = "password" class = "form_login" placeholder = "Masukkan password anda"></input>
-                <br></br>
-
-                <input type = "submit" className = "button_login" value="Login"/>
-                <br></br>
-                
-                <input type = "checkbox" className = "checkbox" value="Remember Me"/>Remember Me
-
-                <br></br>
-                <br></br>
-                <br></br>
-
-                <input type = "submit" className = "button_cancel" value="Cancel"/>
-
-
-            </form>
-            
-          </div>
+          <form>
+            <label className="label_username">Username </label>
+            <input
+              type="text"
+              name="uername"
+              class="form_login"
+              placeholder="masukkan username"
+            ></input>
+            <br/>
+            <label className="label_password">Password </label>
+            <input
+              type="password"
+              name="password"
+              class="form_login"
+              placeholder="Masukkan password"
+            ></input>
+            <br/>
+            <input type="submit" className="login" value="Login" />
+            <br/>
+            <br/>
+            <input type="checkbox"/> Remember Me
+            <br/>
+            <br/>
+            <input type="submit" className="cancel" value="Cancel" />
+          </form>
         </div>
       </div>
     );
